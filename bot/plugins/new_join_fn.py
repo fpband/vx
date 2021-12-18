@@ -50,7 +50,7 @@ async def help_message_f(client, message):
                return
         except UserNotParticipant:
             await message.reply_text(
-                text="****",
+                text="**• برای استفاده از ربات باید در کانال زیر عضو شوید سپس /start را کلیک کنید.👇**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -74,12 +74,12 @@ async def help_message_f(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🤖 Update Channel', url='https://t.me/BX_Botz'),
-                    InlineKeyboardButton('👥Support Group', url='https://t.me/BxSupport')
+                    InlineKeyboardButton('⭕ کانال پشتیبانی ⭕', url='https://t.me/seriesplus1'),
+                    InlineKeyboardButton('⭕ گروه پشتیبانی ⭕', url='https://t.me/dlchinhub')
                 ],
                 [
-                    InlineKeyboardButton('⏳ Live Status ⏳', url='https://t.me/BXCompressStatus'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
-                    InlineKeyboardButton('👲 Developer', url='https://t.me/Mufaz123') # Must Give us Credits!
+                    InlineKeyboardButton('⏳ فعالیت ربات ⏳', url='https://t.me/BXCompressStatus'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
+                    InlineKeyboardButton('💻 ادمین ربات', url='https://t.me/FarshidBand') # Must Give us Credits!
                 ]
             ]
         ),
