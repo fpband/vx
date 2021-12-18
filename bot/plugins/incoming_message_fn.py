@@ -165,7 +165,7 @@ async def incoming_compress_message_f(bot, update):
                 try:
                     await bot.send_message(
                         chat_id=update.chat.id,
-                        text="<b>⁦ ⚙️⁩ لطفا از بین عدد های 10 تا 90 انتخاب کنید.</b> ",
+                        text="⚙️⁩ لطفا از بین عدد های 10 تا 90 انتخاب کنید.",
                         reply_to_message_id=update.message_id
                     )
                     return
