@@ -43,18 +43,18 @@ async def help_message_f(client, message):
             user = await client.get_chat_member(UPDATES_CHANNEL, message.chat.id)
             if user.status == "kicked":
                await message.reply_text(
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/FarshidBand).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
                return
         except UserNotParticipant:
             await message.reply_text(
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="****",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                            InlineKeyboardButton("⭕ عضویت ⭕", url=f"https://t.me/{UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -63,7 +63,7 @@ async def help_message_f(client, message):
             return
         except Exception:
             await message.reply_text(
-                text="Something went Wrong. Contact my [Support Group](https://t.me/BxSupport).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/FarshidBand).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
