@@ -132,13 +132,14 @@ async def convert_video(video_file, output_directory, total_time, bot, message, 
         stats = f'📦️ <b>در حال کم حجم کردن فایل</b> {target_percentage}%\n\n' \
                 f'⏰️ <b>تایم باقی مانده :</b> {ETA}\n\n' \
                 f'{progress_str}\n'
+                f'<b>♨️ @FarshidBand ♨️</b>\n'
         try:
           await message.edit_text(
             text=stats,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [ 
-                        InlineKeyboardButton('❌ Cancel ❌', callback_data='fuckingdo') # Nice Call 🤭
+                        InlineKeyboardButton('❌ لغو ❌', callback_data='fuckingdo') # Nice Call 🤭
                     ]
                 ]
             )
