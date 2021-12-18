@@ -279,7 +279,7 @@ async def incoming_compress_message_f(bot, update):
         if duration is None or bitrate is None:
             try:
                 await sent_message.edit_text(
-                    text="⚠️ Getting video meta data failed ⚠️"
+                    text="<b>⚠️ خطا . فایل ارسالی مشکل دارد. ⚠️</b>"
                 )
                 chat_id = LOG_CHANNEL
                 utc_now = datetime.datetime.utcnow()
@@ -288,7 +288,7 @@ async def incoming_compress_message_f(bot, update):
                 bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
                 bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
                 now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-                await bot.send_message(chat_id, f"**Download Failed, Bot is Free Now !!** \n\nProcess Done at `{now}`",
+                await bot.send_message(chat_id, f"**.❌ دانلود فایل ناموفق بود ‼️\n\n • هم اکنون فایل خود را ارسال نمایید 😊** \n\nProcess Done at `{now}`",
                                        parse_mode="markdown")
                 await download_start.delete()
             except:
@@ -419,7 +419,7 @@ async def incoming_compress_message_f(bot, update):
         delete_downloads()
         try:
             await sent_message.edit_text(
-                text="⚠️ Failed Downloaded path not exist ⚠️"
+                text="⚠️ دانلود این فایل امکان پذیر نیست ⚠️"
             )
             chat_id = LOG_CHANNEL
             utc_now = datetime.datetime.utcnow()
@@ -428,7 +428,7 @@ async def incoming_compress_message_f(bot, update):
             bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
             bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
             now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-            await bot.send_message(chat_id, f"**Download Error, Bot is Free Now !!** \n\nProcess Done at `{now}`",
+            await bot.send_message(chat_id, f"**دانلود این فایل امکان پذیر نیست!!!** \n\nProcess Done at `{now}`",
                                    parse_mode="markdown")
             await download_start.delete()
         except:
