@@ -232,7 +232,7 @@ async def incoming_compress_message_f(bot, update):
                     bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
                     now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
                     await bot.send_message(chat_id,
-                                           f"**Download Stopped, Bot is Free Now !!** \n\nProcess Done at `{now}`",
+                                           f"**❌ دانلود فایل متوقف شد.‼️ \n\n• هم اکنون فایل خود را ارسال نمایید.😊** \n\nProcess Done at `{now}`",
                                            parse_mode="markdown")
                     await download_start.delete()
                 except:
@@ -288,7 +288,7 @@ async def incoming_compress_message_f(bot, update):
                 bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
                 bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
                 now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-                await bot.send_message(chat_id, f"**Download Failed, Bot is Free Now !!** \n\nProcess Done at `{now}`",
+                await bot.send_message(chat_id, f"**❌ فایل ویدیویی ارسالی مشکل دارد !!!\n\n• هم اکنون فایل خود را ارسال نمایید.😊** \n\nProcess Done at `{now}`",
                                        parse_mode="markdown")
                 await download_start.delete()
             except:
@@ -337,7 +337,7 @@ async def incoming_compress_message_f(bot, update):
             bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
             now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
             await compress_start.delete()
-            upload_start = await bot.send_message(chat_id, f"**در حال آپلود فایل...** \n\nProcess Started at `{now}`",
+            upload_start = await bot.send_message(chat_id, f"**📤 در حال آپلود فایل ...** \n\nProcess Started at `{now}`",
                                                   parse_mode="markdown")
             await sent_message.edit_text(
                 text=Localisation.UPLOAD_START,
@@ -373,7 +373,7 @@ async def incoming_compress_message_f(bot, update):
                     bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
                     now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
                     await bot.send_message(chat_id,
-                                           f"**Upload Stopped, Bot is Free Now !!** \n\nProcess Done at `{now}`",
+                                           f"**.❌ آپلود فایل متوقف شد !!!\n\n• هم اکنون فایل خود را ارسال نمایید.😊** \n\nProcess Done at `{now}`",
                                            parse_mode="markdown")
                     await upload_start.delete()
                 except:
@@ -409,7 +409,7 @@ async def incoming_compress_message_f(bot, update):
                 chat_id = LOG_CHANNEL
                 now = datetime.datetime.now()
                 await bot.send_message(chat_id,
-                                       f"**Compression Failed, Bot is Free Now !!** \n\nProcess Done at `{now}`",
+                                       f"**.❌ عملیات کاهش حجم فایل متوقف شد !!!\n\n• هم اکنون فایل خود را ارسال نمایید.😊** \n\nProcess Done at `{now}`",
                                        parse_mode="markdown")
                 await download_start.delete()
             except:
@@ -428,7 +428,7 @@ async def incoming_compress_message_f(bot, update):
             bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
             bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
             now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-            await bot.send_message(chat_id, f"**Download Error, Bot is Free Now !!** \n\nProcess Done at `{now}`",
+            await bot.send_message(chat_id, f"**.❌ خطا در دانلود فایل | فایل مشکل دارد !!\n\n• هم اکنون فایل خود را ارسال نمایید.😊 ** \n\nProcess Done at `{now}`",
                                    parse_mode="markdown")
             await download_start.delete()
         except:
