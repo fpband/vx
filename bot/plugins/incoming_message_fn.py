@@ -165,7 +165,7 @@ async def incoming_compress_message_f(bot, update):
                 try:
                     await bot.send_message(
                         chat_id=update.chat.id,
-                        text="از این عدد های 10 تا 90 انتخاب کنید!",
+                        text="از بین عدد های 10 تا 90 انتخاب کنید!!",
                         reply_to_message_id=update.message_id
                     )
                     return
@@ -195,7 +195,7 @@ async def incoming_compress_message_f(bot, update):
         bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
         bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
         now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-        download_start = await bot.send_message(chat_id, f"**Bot Become Busy Now !!** \n\nDownload Started at `{now}`",
+        download_start = await bot.send_message(chat_id, f"**💡 ربات اکنون مشغول است.** \n\nDownload Started at `{now}`",
                                                 parse_mode="markdown")
         try:
             d_start = time.time()
