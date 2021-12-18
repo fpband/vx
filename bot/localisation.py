@@ -13,11 +13,11 @@ class Localisation:
     FORMAT_SELECTION = "Select the desired format: <a href='{}'>file size might be approximate</a> \nIf you want to set custom thumbnail, send photo before or quickly after tapping on any of the below buttons.\nYou can use /deletethumbnail to delete the auto-generated thumbnail."
     
     
-    DOWNLOAD_START = "📥 Downloading ... 📥l \n"
+    DOWNLOAD_START = "<b>📥 در حال دانلود ... 📥 </b>\n"
     
-    UPLOAD_START = "📤 Uploading ...  \n"
+    UPLOAD_START = "<b>📤 در حال آپلود ... 📤 </b> \n"
     
-    COMPRESS_START = "📀 Trying to compress ... 📀"
+    COMPRESS_START = "<b>📀 در حال عملیات کم حجم کردن فایل 📀</b>"
     
     RCHD_BOT_API_LIMIT = "size greater than maximum allowed size (50MB). Neverthless, trying to upload."
     
@@ -33,7 +33,7 @@ class Localisation:
     
     FF_MPEG_DEL_ETED_CUSTOM_MEDIA = "✅ Media cleared succesfully."
     
-    SAVED_RECVD_DOC_FILE = "✅ Downloaded Successfully."
+    SAVED_RECVD_DOC_FILE = "✅ دانلود فایل با موفقیت انجام شد."
     
     CUSTOM_CAPTION_UL_FILE = " "
     
