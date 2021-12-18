@@ -43,7 +43,7 @@ class Localisation:
     
     USER_ADDED_TO_DB = "User <a href='tg://user?id={}'>{}</a> added to {} till {}."
     
-    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "⚠️ Already one Process going on! ⚠️ \n\nCheck Live Status on Updates Channel."
+    FF_MPEG_RO_BOT_STOR_AGE_ALREADY_EXISTS = "<b>⚠️ ربات در حال انجام کار کاربر دیگری است دقایقی دیگر تلاش کنید ⚠️ </b> \n\n<b>📍نمایش فعالیت ربات 👇.</b>"
     
     HELP_MESSAGE = get_config(
         "STRINGS_HELP_MESSAGE",
