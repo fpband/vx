@@ -64,18 +64,18 @@ async def incoming_start_message_f(bot, update):
             user = await client.get_chat_member(UPDATES_CHANNEL, message.chat.id)
             if user.status == "kicked":
                 await message.reply_text(
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/farshidband).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
                 return
         except UserNotParticipant:
             await message.reply_text(
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**• برای استفاده از ربات باید در کانال زیر عضو شوید سپس /start را کلیک کنید.👇**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                            InlineKeyboardButton("⭕ عضویت ⭕", url=f"https://t.me/{UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -84,7 +84,7 @@ async def incoming_start_message_f(bot, update):
             return
         except Exception:
             await message.reply_text(
-                text="Something went Wrong. Contact my [Support Group](https://t.me/BxSupport).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/FarshidBand).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -95,12 +95,12 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🤖 Update Channel', url='https://t.me/BX_Botz'),
-                    InlineKeyboardButton('👥Support Group', url='https://t.me/BxSupport')
+                    InlineKeyboardButton('⭕ کانال پشتیبانی ⭕', url='https://t.me/seriesplus1'),
+                    InlineKeyboardButton('⭕ گروه پشتیبانی ⭕', url='https://t.me/dlchinhub')
                 ],
                 [
-                    InlineKeyboardButton('⏳ Status ⏳', url='https://t.me/BXCompressStatus'),
-                    InlineKeyboardButton('👲 Developer', url='https://t.me/Mufaz123')
+                    InlineKeyboardButton('⏳ فعالیت ربات ⏳', url='https://t.me/BXCompressStatus'),
+                    InlineKeyboardButton('💻 ادمین ربات', url='https://t.me/FarshidBand')
                 ]
             ]
         ),
@@ -126,11 +126,11 @@ async def incoming_compress_message_f(bot, update):
         except UserNotParticipant:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="**Please Join My Updates Channel to use this Bot!**",
+                text="**• برای استفاده از ربات باید در کانال زیر عضو شوید سپس /start را کلیک کنید.👇**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Join Updates Channel", url=f"https://t.me/{UPDATES_CHANNEL}")
+                            InlineKeyboardButton("⭕ عضویت ⭕", url=f"https://t.me/{UPDATES_CHANNEL}")
                         ]
                     ]
                 ),
@@ -149,7 +149,7 @@ async def incoming_compress_message_f(bot, update):
         try:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="<b>⚠ روی فایل های ارسالی خود ریپلی کنید.</b>",
+                text="⚠ روی فایل های ارسالی خود ریپلی کنید.",
                 reply_to_message_id=update.message_id
             )
         except:
