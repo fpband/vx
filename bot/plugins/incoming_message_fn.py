@@ -140,7 +140,7 @@ async def incoming_compress_message_f(bot, update):
         except Exception:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/BxSupport).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/farshidband).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -149,7 +149,7 @@ async def incoming_compress_message_f(bot, update):
         try:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="😜 Reply to telegram media 😜",
+                text="<b>⚠ روی فایل های ارسالی خود ریپلی کنید.</b>",
                 reply_to_message_id=update.message_id
             )
         except:
@@ -165,7 +165,7 @@ async def incoming_compress_message_f(bot, update):
                 try:
                     await bot.send_message(
                         chat_id=update.chat.id,
-                        text="😁 Value should be 10 to 90",
+                        text="<b>⁦⚙️⁩ لطفا از بین عدد های 10 تا 90 انتخاب کنید.</b>",
                         reply_to_message_id=update.message_id
                     )
                     return
@@ -262,7 +262,7 @@ async def incoming_compress_message_f(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('Show Bot Status', url=f'https://t.me/{LOG_CHANNEL}')
+                            InlineKeyboardButton('⭕ نمایش فعالیت ربات ⭕', url=f'https://t.me/{LOG_CHANNEL}')
                             # That's Username na ...
                         ]
                     ]
@@ -448,11 +448,11 @@ async def incoming_cancel_message_f(bot, update):
     if os.path.exists(status):
         inline_keyboard = []
         ikeyboard = []
-        ikeyboard.append(InlineKeyboardButton("Yes 🚫", callback_data=("fuckingdo").encode("UTF-8")))
-        ikeyboard.append(InlineKeyboardButton("No 🤗", callback_data=("fuckoff").encode("UTF-8")))
+        ikeyboard.append(InlineKeyboardButton("بله 🚫", callback_data=("fuckingdo").encode("UTF-8")))
+        ikeyboard.append(InlineKeyboardButton("خیر 🤗", callback_data=("fuckoff").encode("UTF-8")))
         inline_keyboard.append(ikeyboard)
         reply_markup = InlineKeyboardMarkup(inline_keyboard)
-        await update.reply_text("Are you sure? 🚫 This will stop the compression!", reply_markup=reply_markup,
+        await update.reply_text(" آیا عملیات پروژه لغو شود؟؟", reply_markup=reply_markup,
                                 quote=True)
     else:
         delete_downloads()
