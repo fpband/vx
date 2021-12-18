@@ -47,7 +47,7 @@ class Localisation:
     
     HELP_MESSAGE = get_config(
         "STRINGS_HELP_MESSAGE",
-        "➠ Send Me Any Media Or File\n\n➠ Reply To Telegram Media /Compress"
+        "✵ ابتدا فایل را به این ربات ارسال کنید.\n\n<b>✵ سپس روی فایل ارسالی خود ریپلی کنید.</b> \n\n<b>→  /compress 50  ←</b> \n\n<b>✵ بجای عدد 50 | میزانی که میخواهید کم حجم کنید بنویسید.</b>\n\n<b>📌 تذکر ؛ لطفا فقط از عدد های 10 تا 90 استفاده کنید.</b>"
     )
     WRONG_MESSAGE = get_config(
         "STRINGS_WRONG_MESSAGE",
