@@ -1,34 +1,4 @@
 # VideoCompress
-![GitHub Repo stars](https://img.shields.io/github/stars/AbirHasan2005/VideoCompress?color=blue&style=flat)
-![GitHub forks](https://img.shields.io/github/forks/AbirHasan2005/VideoCompress?color=green&style=flat)
-![GitHub issues](https://img.shields.io/github/issues/AbirHasan2005/VideoCompress)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/AbirHasan2005/VideoCompress)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/AbirHasan2005/VideoCompress)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AbirHasan2005/VideoCompress)
-![GitHub contributors](https://img.shields.io/github/contributors/AbirHasan2005/VideoCompress?style=flat)
-![GitHub repo size](https://img.shields.io/github/repo-size/AbirHasan2005/VideoCompress?color=red)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/AbirHasan2005/VideoCompress)
-![GitHub](https://img.shields.io/github/license/AbirHasan2005/VideoCompress)
-[![Bot Support](https://img.shields.io/badge/Video%20Compress%20Bot-support%20group-blue)](https://t.me/LinuxRepository_OT)
-
-
-A Telegram Video Compressor Bot By [@AbirHasan2005](https://t.me/linux_repo). **This bot works for all!** No need to define each user IDs to use bot. Also works in Group.
-
-### Special Features:
-- Bot's Live Status on Channel
-- Force Sub to Channel
-- Database:
-	- Can Broadcast messages
-	- Can Ban-Unban Manually
-	- Can see numbers users in DB
-
-* If you need more help to Deploy Feel Free to ask in [Support Group](https://t.me/linux_repo).
-
-### Demo Bot:
-<a href="https://t.me/VidCom_Robot"><img src="https://img.shields.io/badge/Demo-Telegram%20Bot-blue.svg?logo=telegram"></a>
-
-### Demo Logs Channel:
-<a href="https://t.me/VideoCompressLogs"><img src="https://img.shields.io/badge/Demo-Bot%20Logs%20Channel-blue.svg?logo=telegram"></a>
 
 ## Easy Deploy:
 <p><a href="https://heroku.com/deploy"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="200""/></a></p>
