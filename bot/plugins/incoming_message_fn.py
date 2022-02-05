@@ -64,7 +64,7 @@ async def incoming_start_message_f(bot, update):
             user = await client.get_chat_member(UPDATES_CHANNEL, message.chat.id)
             if user.status == "kicked":
                 await message.reply_text(
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/farshidband).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support Admin](https://t.me/farshidband).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -84,7 +84,7 @@ async def incoming_start_message_f(bot, update):
             return
         except Exception:
             await message.reply_text(
-                text="Something went Wrong. Contact my [Support Group](https://t.me/FarshidBand).",
+                text="Something went Wrong. Contact my [Support Admin](https://t.me/FarshidBand).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -99,7 +99,7 @@ async def incoming_start_message_f(bot, update):
                     InlineKeyboardButton('⭕ گروه پشتیبانی ⭕', url='https://t.me/dlchinhub')
                 ],
                 [
-                    InlineKeyboardButton('⏳ فعالیت ربات ⏳', url='https://t.me/BXCompressStatus'),
+                    InlineKeyboardButton('⏳ فعالیت ربات ⏳', url='https://t.me/mybot_test'),
                     InlineKeyboardButton('💻 ادمین ربات', url='https://t.me/FarshidBand')
                 ]
             ]
