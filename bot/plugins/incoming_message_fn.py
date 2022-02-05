@@ -262,8 +262,8 @@ async def incoming_compress_message_f(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton('⭕ نمایش فعالیت ربات ⭕', url=f'https://t.me/{LOG_CHANNEL}')
-                            # That's Username na ...
+                            InlineKeyboardButton('⭕ نمایش فعالیت ربات ⭕', url='https://t.me/mybot_test'),
+                           
                         ]
                     ]
                 ),
