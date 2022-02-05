@@ -63,7 +63,7 @@ async def help_message_f(client, message):
             return
         except Exception:
             await message.reply_text(
-                text="Something went Wrong. Contact my [Support Group](https://t.me/FarshidBand).",
+                text="Something went Wrong. Contact my [Support Admin](https://t.me/FarshidBand).",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -78,7 +78,7 @@ async def help_message_f(client, message):
                     InlineKeyboardButton('⭕ گروه پشتیبانی ⭕', url='https://t.me/dlchinhub')
                 ],
                 [
-                    InlineKeyboardButton('⏳ فعالیت ربات ⏳', url='https://t.me/BXCompressStatus'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
+                    InlineKeyboardButton('⏳ فعالیت ربات ⏳', url='https://t.me/mybot_test'), # Bloody Thief, Don't Become a Developer by Stealing other's Codes & Hard Works!
                     InlineKeyboardButton('💻 ادمین ربات', url='https://t.me/FarshidBand') # Must Give us Credits!
                 ]
             ]
